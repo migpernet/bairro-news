@@ -127,7 +127,8 @@ nav ul li a:hover{
     }
 
     article a:hover{
-        color: green;
+        color: red;
+        text-decoration: underline black;
     }
 
     article a:active{
@@ -166,17 +167,13 @@ nav ul li a:hover{
 
     aside section a{
         text-decoration: none;
-        
+        color: blue;
     }
 
 
     aside section a:hover{
-        color: blue;
-        text-decoration: underline;
-    }
-
-    side section a:active{
-        color: brown;
+        color: orangered;
+        text-decoration: underline black;
     }
 
 /*6 - Configuração do footer*/
