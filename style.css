@@ -1,187 +1,312 @@
-/*0 - Configuração geral do site*/
-*{
-    margin: 0;;
-}
-
-body{
-    font-family: 'David Libre', serif;
-    margin: 0 200px 0 200px;
-    /*background-color: beige;*/
-    background-image: linear-gradient(135deg,rgb(214, 214, 196),rgb(190, 207, 190),rgb(170, 170, 206),rgb(206, 187, 206));
-}
-
-/*1 - Configuração do cabeçalho do site*/
+/*FORMATAÇÃO DO CABEÇALHO (HEADER)*/
 header{
-    background-color: beige;
-    height: auto;
+    background-color: aqua;
     text-align: center;
-    padding: 30px 0 30px 0;
-    animation: titulo1 5s infinite;
+    font-size: 2em;
+    
 }
-
 h1{
-    font-size: 40px;
-    animation: titulo 3s infinite;
-}
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding: 20px;
+    font-family: 'Architects Daughter', cursive;
+    margin-right: 134px;
 
-@keyframes titulo1{
-    0% {background-color: chartreuse;}
-    25% {background-color: cyan;}
-    50% {background-color: darkseagreen;}
-    75% {background-color: cornsilk;}
-    100% {background-color: violet;}
-}
-
-@keyframes titulo{
-    0% {letter-spacing: 2px;}
-    50% {letter-spacing: 16px;}
-    100% {letter-spacing: 2px;}
+    animation-name: titulo;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 
 h1:hover{
-    transform: scale(1.4);
+    transform: scale(1.2);
+}
 
+@keyframes titulo{
+    0% {color: black; letter-spacing: 2px;}
+    50% {color: greenyellow; letter-spacing: 8px;}
+    100% {color: blue; letter-spacing: 2px;}
+}
+
+.jornal img {
+    width: 8%;
+    height: 8%;
+    float: left;
+    padding-left: 20px;
+    padding-right: 10px;
 }
 
 
-/*2 - Configuração do manu*/
+
+
+/*--------------------------------------------------------------------------------------------*/
+/*FORMATAÇÃO DO MANU (NAV)*/
 nav{
     background-color: black;
-    height: auto;
-    
+    padding: 2px 0px 2px 0px;
+   
 }
 
 nav ul{
     list-style: none;
-    padding-left: 25px;
+    margin: 0;
     
 }
 
 nav ul li{
     display: inline-block;
-    padding: 10px 15px 10px 15px;
-    font-size: 20px;
-    
+    padding: 10px 0px 10px 0px;
+   
 }
 
 nav ul li a{
     text-decoration: none;
     color: white;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding: 15px;
+    margin: 0px 10px 0px 10px;
+    font-size: 20px;
 }
 
 nav ul li a:hover{
-    background-color: white;
     color: black;
+    text-decoration: underline black;
+}
+
+nav ul li:hover{
+    background: lightgrey;
     
 }
 
 
-
-/*3 - Configuração do main*/
-    main{
-        height: auto;
-    }
-
-
-/*4 - Configuração do article*/
-    article{
-        height: auto;
-        width: 70%;
-        float: left
-    }
-
-    article h2{
-        padding: 15px 0 15px 10px;
-    }
-
-    .bloco{
-        height: 250px;
-    }
-
-    .bloco h2{
-        padding: 15px 0 15px 0;
-    }
-
-   .bloco img{
-        width: 200px;
-        height: 200px;
-        float: left;
-        padding: 15px 15px 20px 15px;
-    }
-
-    .bloco p{
-        padding-top: 10px;
-        padding-right: 50px;
-        text-align: justify;
-    }
-
-    img:hover{
-        transform: scale(1.1);
-    }
-
-    article a{
-        color: blue;
-        text-decoration: none;
-    }
-
-    article a:hover{
-        color: red;
-        text-decoration: underline black;
-    }
-
-    article a:active{
-        color: magenta;
-    }
-
-    blockquote{
-        padding: 10px;
-    }
-
-/*5 - Configuração do aside*/
-    aside{
-        height: auto;
-        width: 30%;
-        float: right;
-    }
-
-    aside section{
-        height: 270px;
-    }
-
-    aside section iframe,img{
-        height: 200px;
-        width: 100%;
-        padding-top: 10px;
-    }
-
-    aside section h3{
-        padding-top: 10px;
-        text-align: center;
-    }
-
-    aside section iframe:hover{
-        transform: scale(1.1);
-    }
-
-    aside section a{
-        text-decoration: none;
-        color: blue;
-    }
-
-
-    aside section a:hover{
-        color: orangered;
-        text-decoration: underline black;
-    }
-
-/*6 - Configuração do footer*/
-footer{
-    background-color: green;
-    height: auto;
-    clear: both;
-    padding: 20px;
+/*-----------------------------------------------------------------------------------------------*/
+/*FORMATAÇÃO DA SECTION TABELA*/
+font{
     text-align: center;
-    font-size: 18px;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 20px;
 }
+
+table tr th img{
+    width: 200px;
+}
+
+.tabela{
+    padding: 0 150px 20px 150px;
+    overflow: hidden; /*posso utilizar este ou no footer utilizar "clear: both;" para corrigir as flutuações. Este último ficou melhor*/
+}
+
+#figBairro1{
+    width: 200px;
+}
+
+#figBairro2{
+    width: 300px;
+    padding: 71px 0 0 0;
+}
+
+#figBairro3{
+    width: 230px;
+}
+
+#figBairro4{
+    width: 300px;
+}
+
+tr{
+    align-items: center;
+}
+
+td , p , th{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+td{
+    text-align: justify;
+    padding: 0 8px 0 8px;
+}
+
+th h3{
+    margin: 18px 0px 18px 0px;
+    background-color: rgb(189, 184, 172);
+    padding: 5px 0 5px 0;
+}
+
+img:hover{
+    transform: scale(1.1);
+}
+
+iframe:hover{
+    transform: scale(1.1);
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/*FORMATAÇÃO DO ARTICLE*/
+
+main{
+    padding: 0 150px 0px 150px;
+    overflow: hidden; /*posso utilizar este ou no footer utilizar "clear: both;" para corrigir as flutuações. Este último ficou melhor*/
+}
+
+article{
+    float: left;
+    width: 750px;
+}
+
+
+
+#titulo-article{
+    text-align: left;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 15px;
+    color: white;
+    background-color: black;
+}
+
+#titulo-article h2{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding: 10px;
+}
+
+.noticias{
+    margin-bottom: 10px;
+    overflow: hidden;
+    
+}
+.noticias img{
+    float: left;
+    width: 200px;
+    height: 200px;
+    padding-right: 25px;
+    
+}
+
+.noticias h2{
+    margin-bottom: 10px;
+    margin-block-start: 5px;
+    text-align: center; 
+    background-color: rgb(189, 184, 172);
+    padding: 3px 0 3px 0;
+}
+
+.noticias p{
+    text-align: justify;
+}
+
+h3{
+    margin-block-start: 10px;
+}
+
+.altura-do-bloco{
+    height: 200px;
+}
+
+.noticias .altura-do-bloco p a:link{
+    color: red;
+}
+
+.noticias .altura-do-bloco p a:visited{
+    color: green;
+}
+
+.noticias .altura-do-bloco p a:hover{
+    color:hotpink;
+}
+
+.noticias .altura-do-bloco p a:active{
+    color: blue;
+}
+
+
+
+/*-------------------------------------------------------------------------------------------*/
+/*FORMATAÇÃO DA ASIDE*/
+aside{
+    float: right;
+    width: 453px;
+    height: 1744.2px;
+    width: 447px;
+}
+
+aside .diversos{
+    height: 350px;
+    width: 447px;
+    
+}
+
+aside .diversos1{
+    height: 300px;
+    width: 447px;
+    
+}
+
+aside .diversos iframe{
+    height: 248px;
+    width: 90%;
+    padding: 6px 0 6px 25px
+}
+
+aside .diversos img{
+    padding-left: 80px;
+}
+
+aside .diversos1 iframe{
+    height: 248px;
+    width: 90%;
+    padding: 6px 0 6px 25px
+}
+
+aside .diversos1 img{
+    width: 350px;
+    height: 300px;
+    padding-left: 48.5px;
+    padding-right: 48.5px;
+}
+
+aside .diversos h2{
+    text-align: center;
+    font-family: 'Epilogue', sans-serif;
+    background-color: yellowgreen;
+    color: white;
+    margin-block-start: 0px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+aside .diversos1 a h3{
+    text-align: center;
+    color: black;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 16px;
+    margin: 5px 38px 0 38px;
+
+}
+
+aside .diversos1 a{
+    text-decoration: none;
+}
+
+aside .diversos1 a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+aside .diversos1 a h3:hover{
+    color: brown;
+}
+
+
+/*----------------------------------------------------------------------------------*/
+/*FORMATAÇÃO DO RODAPÉ*/
+footer{
+    background-color: aqua;
+    /*clear: both; */ /*Correção da flutuação envolvendo o article/aside e footer*/
+    height: auto;
+}
+
+footer p{
+    font-family: 'Epilogue', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
