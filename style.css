@@ -167,12 +167,12 @@ nav ul li a:hover{
 
     aside section a{
         text-decoration: none;
-        color: blue;
+        color: green;
     }
 
 
     aside section a:hover{
-        color: red;
+        color: blue;
         text-decoration: underline black;
     }
 
